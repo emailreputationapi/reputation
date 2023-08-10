@@ -5,7 +5,7 @@
 You can install the package via Composer:
 
 ```bash
-composer require emailreputationapi/laravel-reputation
+composer require emailreputationapi/reputation
 ```
 
 You can publish the config file with:
@@ -34,8 +34,18 @@ EMAIL_REPUTATION_API_URL='https://emailreputationapi.com/api/v1/validate'
 ## Usage
 
 ```php
-$era = new EmailReputationAPI\Reputation();
-echo $era->echoPhrase('Hello, WJGilmore!');
+$era = new EmailReputationAPI\Reputation\Email;
+$valid = $era->validate('jason@hotmail.com');
+= {#6227
+    +"email": "jason@hotmail.com",
+    +"syntax": "valid",
+    +"tld": "true",
+    +"personal": "false",
+    +"disposable": "false",
+    +"business": "false",
+    +"government": "false",
+    +"unknown": "true",
+  }
 ```
 
 ## Security Vulnerabilities
