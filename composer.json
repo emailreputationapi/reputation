@@ -56,7 +56,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "EmailReputationAPI\\Reputation\\LaravelReputationapiServiceProvider"
+                "EmailReputationAPI\\Reputation\\LaravelReputationServiceProvider"
             ],
             "aliases": {
                 "Validate": "EmailReputationAPI\\Reputation\\Facades\\Validate"
