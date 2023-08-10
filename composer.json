@@ -1,12 +1,12 @@
 {
-    "name": "emailreputationapi/laravel-reputation",
+    "name": "emailreputationapi/reputation",
     "description": "A Laravel package for the EmailReputationAPI.com service.",
     "keywords": [
         "EmailReputationAPI.com",
         "laravel",
         "laravel-reputation"
     ],
-    "homepage": "https://github.com/emailreputationapi/laravel-reputation",
+    "homepage": "https://github.com/emailreputationapi/reputation",
     "license": "MIT",
     "authors": [
         {
