@@ -1,5 +1,7 @@
 # EmailReputationAPI Laravel Package
 
+[EmailReputationAPI.com](https://emailreputationapi.com) is a service that helps sales teams more effectively filter and segment leads by identifying personal and disposable email addresses and domains. You can use this Laravel package to easily plug into the EmailReputation API validation service and database.
+
 ## Installation
 
 You can install the package via Composer:
