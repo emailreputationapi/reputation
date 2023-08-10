@@ -1,6 +1,6 @@
 <?php
 
-namespace WJGilmore\LaravelEmailreputationapi;
+namespace EmailReputationAPI\Reputation;
 
 use Illuminate\Support\Facades\Http;
 

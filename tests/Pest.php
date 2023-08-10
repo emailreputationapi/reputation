@@ -1,5 +1,5 @@
 <?php
 
-use WJGilmore\LaravelEmailreputationapi\Tests\TestCase;
+use EmailReputationAPI\Reputation\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

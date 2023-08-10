@@ -1,10 +1,10 @@
 <?php
 
-namespace WJGilmore\LaravelEmailreputationapi\Tests;
+namespace EmailReputationAPI\Reputation\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use WJGilmore\LaravelEmailreputationapi\LaravelEmailreputationapiServiceProvider;
+use EmailReputationAPI\Reputation\LaravelEmailreputationapiServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'WJGilmore\\LaravelEmailreputationapi\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'EmailReputationAPI\Reputation\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 

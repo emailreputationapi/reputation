@@ -2,15 +2,16 @@
     "name": "emailreputationapi/laravel-reputation",
     "description": "A Laravel package for the EmailReputationAPI.com service.",
     "keywords": [
+        "EmailReputationAPI.com",
         "laravel",
         "laravel-reputation"
     ],
-    "homepage": "https://github.com/emailreputation/laravel-reputation",
+    "homepage": "https://github.com/emailreputationapi/laravel-reputation",
     "license": "MIT",
     "authors": [
         {
             "name": "Jason Gilmore",
-            "email": "emailreputationapi@wjgilmore.com",
+            "email": "help@emailreputationapi.com",
             "role": "Developer"
         }
     ],
@@ -29,13 +30,13 @@
     },
     "autoload": {
         "psr-4": {
-            "WJGilmore\\LaravelEmailreputationapi\\": "src/",
-            "WJGilmore\\LaravelEmailreputationapi\\Database\\Factories\\": "database/factories/"
+            "EmailReputationAPI\\LaravelEmailreputationapi\\": "src/",
+            "EmailReputationAPI\\LaravelEmailreputationapi\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "WJGilmore\\LaravelEmailreputationapi\\Tests\\": "tests/"
+            "EmailReputationAPI\\LaravelEmailreputationapi\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -55,10 +56,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "WJGilmore\\LaravelEmailreputationapi\\LaravelEmailreputationapiServiceProvider"
+                "EmailReputationAPI\\LaravelEmailreputationapi\\LaravelEmailreputationapiServiceProvider"
             ],
             "aliases": {
-                "LaravelEmailreputationapi": "WJGilmore\\LaravelEmailreputationapi\\Facades\\Validate"
+                "LaravelEmailreputationapi": "EmailReputationAPI\\LaravelEmailreputationapi\\Facades\\Validate"
             }
         }
     },

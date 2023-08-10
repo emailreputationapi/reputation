@@ -1,6 +1,6 @@
 <?php
 
-namespace WJGilmore\LaravelEmailreputationapi\Database\Factories;
+namespace EmailReputationAPI\Reputation\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 

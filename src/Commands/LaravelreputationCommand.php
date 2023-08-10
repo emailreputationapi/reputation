@@ -1,12 +1,12 @@
 <?php
 
-namespace WJGilmore\LaravelEmailreputationapi\Commands;
+namespace EmailReputationAPI\Reputation\Commands;
 
 use Illuminate\Console\Command;
 
-class LaravelEmailreputationapiCommand extends Command
+class LaravelReputationCommand extends Command
 {
-    public $signature = 'laravel-emailreputationapi';
+    public $signature = 'laravel-reputation';
 
     public $description = 'My command';
 

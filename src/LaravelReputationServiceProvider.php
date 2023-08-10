@@ -1,19 +1,19 @@
 <?php
 
-namespace WJGilmore\LaravelEmailreputationapi;
+namespace EmailReputationAPI\Reputation;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
-use WJGilmore\LaravelEmailreputationapi\Commands\LaravelEmailreputationapiCommand;
+use EmailReputationAPI\Reputation\Commands\LaravelEmailreputationapiCommand;
 
-class LaravelEmailreputationapiServiceProvider extends PackageServiceProvider
+class LaravelReputationServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
 
         $package
-            ->name('laravel-emailreputationapi')
+            ->name('laravel-reputation')
             ->hasConfigFile()
             ->hasInstallCommand(function (InstallCommand $command) {
                 $command

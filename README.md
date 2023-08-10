@@ -5,16 +5,16 @@
 You can install the package via Composer:
 
 ```bash
-composer require wjgilmore/laravel-emailreputationapi
+composer require emailreputationapi/laravel-reputation
 ```
 
 You can publish the config file with:
 
 ```bash
-$ php artisan vendor:publish --tag="emailreputationapi-config"
+$ php artisan vendor:publish --tag="reputation-config"
 ```
 
-This is the contents of the published config file (`config/emailreputationapi.php`):
+This is the contents of the published config file (`config/reputation.php`):
 
 ```php
 return [
@@ -34,8 +34,8 @@ EMAIL_REPUTATION_API_URL='https://emailreputationapi.com/api/v1/validate'
 ## Usage
 
 ```php
-$laravelEmailreputationapi = new WJGilmore\LaravelEmailreputationapi();
-echo $laravelEmailreputationapi->echoPhrase('Hello, WJGilmore!');
+$era = new EmailReputationAPI\Reputation();
+echo $era->echoPhrase('Hello, WJGilmore!');
 ```
 
 ## Security Vulnerabilities
