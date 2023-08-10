@@ -5,7 +5,7 @@ namespace EmailReputationAPI\Reputation;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 use Spatie\LaravelPackageTools\Commands\InstallCommand;
-use EmailReputationAPI\Reputation\Commands\LaravelEmailreputationapiCommand;
+use EmailReputationAPI\Reputation\Commands\LaravelEmailReputationCommand;
 
 class LaravelReputationServiceProvider extends PackageServiceProvider
 {

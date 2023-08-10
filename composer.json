@@ -30,8 +30,8 @@
     },
     "autoload": {
         "psr-4": {
-            "EmailReputationAPI\\LaravelEmailreputationapi\\": "src/",
-            "EmailReputationAPI\\LaravelEmailreputationapi\\Database\\Factories\\": "database/factories/"
+            "EmailReputationAPI\\Reputation\\": "src/",
+            "EmailReputationAPI\\Reputation\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
