@@ -1,6 +1,8 @@
 # EmailReputationAPI Laravel Package
 
-[EmailReputationAPI.com](https://emailreputationapi.com) is a service that helps sales teams more effectively filter and segment leads by identifying personal and disposable email addresses and domains. You can use this Laravel package to easily plug into the EmailReputation API validation service and database.
+[EmailReputationAPI.com](https://emailreputationapi.com) is a service that helps organizations more effectively manage leads by identifying personal and disposable email addresses and domains. You can use this Laravel package to easily plug into the EmailReputation API validation service and database.
+
+To use this package you'll first need create an EmailReputationAPI.com account. Doing so is free, and you can validate up to 100 email addresses per month. No credit card is required to get started, and you can email the service creator Jason Gilmore (wj@wjgilmore.com) anytime with questions.
 
 ## Installation
 
@@ -10,7 +12,7 @@ You can install the package via Composer:
 composer require emailreputationapi/reputation
 ```
 
-You can publish the config file with:
+Next, publish the config file:
 
 ```bash
 $ php artisan vendor:publish --tag="reputation-config"
@@ -25,7 +27,7 @@ return [
 ];
 ```
 
-Open your `.env` file and add the following section:
+Finally, open your `.env` file and add the following section:
 
 ```bash
 # EmailReputationAPI.com
@@ -38,7 +40,7 @@ EMAIL_REPUTATION_API_URL='https://emailreputationapi.com/api/v1/validate'
 ```php
 $era = new EmailReputationAPI\Reputation\Email;
 $valid = $era->validate('jason@hotmail.com');
-= {#6227
+= {
     +"email": "jason@hotmail.com",
     +"syntax": "valid",
     +"tld": "true",
@@ -52,4 +54,4 @@ $valid = $era->validate('jason@hotmail.com');
 
 ## Security Vulnerabilities
 
-Please email security@emailreputationapi.com
+Did I do something stupid? Please email me at wj@wjgilmore.com.

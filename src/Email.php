@@ -9,10 +9,10 @@ class Email
     public function validate($email)
     {
         $response = Http::withHeaders([
-            'Authorization' => 'Bearer ' . config('emailreputationapi.api_key'),
+            'Authorization' => 'Bearer ' . config('reputation.api_key'),
             'Accept' => 'application/json',
             'email' => $email
-        ])->get(config('emailreputationapi.api_url'));
+        ])->get(config('reputation.api_url'));
         return json_decode($response);
     }
 }
