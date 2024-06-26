@@ -11,7 +11,7 @@
     "authors": [
         {
             "name": "Jason Gilmore",
-            "email": "help@emailreputationapi.com",
+            "email": "wj@wjgilmore.com",
             "role": "Developer"
         }
     ],
@@ -36,7 +36,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "EmailReputationAPI\\LaravelEmailreputationapi\\Tests\\": "tests/"
+            "EmailReputationAPI\\Reputation\\Tests\\": "tests/"
         }
     },
     "scripts": {

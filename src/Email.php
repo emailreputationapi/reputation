@@ -11,8 +11,10 @@ class Email
         $response = Http::withHeaders([
             'Authorization' => 'Bearer ' . config('reputation.api_key'),
             'Accept' => 'application/json',
+        ])->post(config('reputation.api_url'), [
             'email' => $email
-        ])->get(config('reputation.api_url'));
+        ]);
+
         return json_decode($response);
     }
 }
